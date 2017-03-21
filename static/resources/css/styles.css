@@ -1,0 +1,120 @@
+.masthead h1.ui.header {
+    margin-top: 2em;
+    margin-bottom: 0;
+    font-size: 3.5em;
+    font-weight: normal;
+}
+
+.masthead.segment {
+    min-height: 500px;
+    padding: 1em 0;
+    background-image: url(/static/resources/img/bg6.jpg)!important;
+    background-size: cover!important;
+    background-position: center!important;
+    color: #fff!important;
+    overflow: hidden!important;
+}
+
+.history {
+    min-height: 800px;
+    padding: 1em 0;
+    background-image: url(/static/resources/img/bg7.jpg)!important;
+    background-size: cover!important;
+    background-position: center!important;
+    color: #fff!important;
+    overflow: hidden!important;
+}
+
+.ui.container.fixed {
+    margin-top: 2em!important; 
+    margin-bottom: 2em!important;
+}
+
+.cardfixd {
+    width: 280px!important;
+}
+
+a {
+  color: #000!important;
+  text-decoration: none;
+}
+
+.maillink {
+     color: #fff!important;
+     text-decoration: none;
+}
+
+.ui.horizontal.divider.header.fixed {
+    margin-bottom: 2em!important; 
+}
+
+.ui.center.aligned.header.fixed {
+
+}
+
+.ui.right.floated.image.qrcode{
+    float: right;
+    margin-right: 0em;
+    margin-bottom: 0em;
+    margin-left: 1em;
+}
+
+.tooltip_templates {
+  display: none;
+}
+
+.hs1 {
+    position: absolute;
+    bottom: 48%;
+    left: 10.5%;
+    width: 2em;
+    height: 2em;
+}
+
+.hs2 {
+    position: absolute;
+    bottom: 61.5%;
+    left: 23.65%;
+    width: 2em;
+    height: 2em;
+}
+
+.hs3 {
+    position: absolute;
+    bottom: 58.5%;
+    left: 39.3%;
+    width: 2em;
+    height: 2em;
+}
+
+.hs4 {
+    position: absolute;
+    bottom: 55.8%;
+    left: 55.42%;
+    width: 2em;
+    height: 2em;
+}
+
+.hs5 {
+    position: absolute;
+    bottom: 32.4%;
+    left: 60.9%;
+    width: 2em;
+    height: 2em;
+}
+
+.hs6 {
+    position: absolute;
+    bottom: 33.6%;
+    left: 76.7%;
+    width: 2em;
+    height: 2em;
+}
+
+.hs7 {
+    position: absolute;
+    bottom: 55.6%;
+    left: 82.7%;
+    width: 2em;
+    height: 2em;
+}

@@ -1,0 +1,208 @@
+{% extends "base.html" %}
+{% block header %}
+    <div class="ui container">
+        <div class="ui massive secondary pointing menu">
+            <a class="item" href="./index.html"><img src="/static/resources/img/ssw.bmp">七星网络安全社团</a>
+            <div class="right menu" style="margin-bottom: 14px;">
+                <a class="ui item" href="./index.html">首页</a>
+                <a class="ui item" href="./index.html">工具</a>
+                <a class="ui item" href="./index.html">CTF平台</a>
+                <a class="ui item" href="./index.html">知识库</a>
+                <a class="ui item" href="./index.html">博客</a>
+                <a class="ui item" href="./index.html">论坛</a>
+                <!-- 关于我们的内容暂时没意义，不放-->
+                <!-- <a class="ui item" href="./index.html">关于我们</a> -->
+            </div>
+        </div>
+    </div>
+{% end %}
+
+{% block container %}
+    <!-- banner -->
+    <div class="ui inverted vertical masthead center aligned segment">
+        <div class="ui text container">
+            <h1 class="ui inverted header">
+                七星网络安全社
+            </h1>
+            <h3>七星网络安全社，简称七星社。由北京信息科技大学计算机学院于2012年12月组建，前身为计算机学院INS网络安全实验室。致力于在学生群体中进行信息安全相关技术的普及和交流。成立多年来，在学校有关部门、老师的大力支持，以及各届成员的努力下，七星社现已成长为一个在安全方向具有一定技术实力的学生组织。</h3>
+        </div>
+    </div>
+    <div class="ui container fixed">
+        <h3 class="ui horizontal divider header fixed">
+            社团成果时间线
+        </h3>
+        <div class="ui image" data-interaction="hover">
+            <img class="ui fluid image ip_tooltipImg" src="/static/resources/img/bg7.jpg" >
+            <!-- <span class="hs1 tooltip" title="2010年社团成立，名为INS网络安全实验室"></span>
+            <span class="hs2 tooltip" title="2012年社团正式更名为七星网络安全社"></span>
+            <span class="hs3 tooltip" title="2014年6月，举办北京信息科技大学第一届“360杯”网络安全技术邀请赛"></span>
+            <span class="hs4 tooltip" title="2015年8月，参加《启明星辰杯》全国大学生信息安全技术大赛获得二等奖"></span>
+            <span class="hs5 tooltip" title="2016年4月，参加4.29北京安全日《西普杯》京津冀信息安全技术挑战赛获得第七名"></span>
+            <span class="hs6 tooltip" title="2016年6月，举办北京信息科技大学第二届“西普杯”网络安全技术邀请赛"></span>
+            <span class="hs7 tooltip" title="2016年9月，在小营校区成立分社团"></span> -->
+            <span class="hs1 tooltip"  data-tooltip-content="#tooltip_content1" ></span>
+            <span class="hs2 tooltip"  data-tooltip-content="#tooltip_content2" ></span>
+            <span class="hs3 tooltip"  data-tooltip-content="#tooltip_content3" ></span>
+            <span class="hs4 tooltip"  data-tooltip-content="#tooltip_content4" ></span>
+            <span class="hs5 tooltip"  data-tooltip-content="#tooltip_content5" ></span>
+            <span class="hs6 tooltip"  data-tooltip-content="#tooltip_content6" ></span>
+            <span class="hs7 tooltip"  data-tooltip-content="#tooltip_content7" ></span>
+
+            <div class="tooltip_templates">
+                <span id="tooltip_content1">
+                    <h3>2010年社团成立，名为INS网络安全实验室</h3>
+                </span>
+            </div>
+
+            <div class="tooltip_templates">
+                <span id="tooltip_content2">
+                    <h3>2012年社团正式更名为七星网络安全社</h3>
+                </span>
+            </div>
+
+            <div class="tooltip_templates">
+                <span id="tooltip_content3">
+                    <h3>2014年6月，举办北京信息科技大学第一届“360杯”网络安全技术邀请赛</h3>
+                </span>
+            </div>
+
+            <div class="tooltip_templates">
+                <span id="tooltip_content4">
+                    <h3>2015年8月，参加《启明星辰杯》全国大学生信息安全技术大赛获得二等奖</h3>
+                </span>
+            </div>
+
+            <div class="tooltip_templates">
+                <span id="tooltip_content5">
+                    <h3>2016年4月，参加4.29北京安全日《西普杯》京津冀信息安全技术挑战赛获得第七名</h3>
+                </span>
+            </div>
+
+            <div class="tooltip_templates">
+                <span id="tooltip_content6">
+                    <h3>2016年6月，举办北京信息科技大学第二届“西普杯”网络安全技术邀请赛</h3>
+                </span>
+            </div>
+
+            <div class="tooltip_templates">
+                <span id="tooltip_content7">
+                    <h3>2016年9月，在小营校区成立分社团</h3>
+                </span>
+            </div>
+        </div>
+    </div>
+    
+    <div class="ui container fixed">
+        <h3 class="ui horizontal divider header fixed">
+            社团成员
+        </h3>
+        <div class="ui grid">
+            {% for index in range(0,len(staffs),4) %}
+
+                {%set start = index %}
+                {% if index + 4 <= len(staffs) %}
+                    {%set end = index + 4 %}
+                {% else %}
+                    {%set end = len(staffs) %}
+                {% end %}
+                <div class="four column row">
+
+                    {% for staff in staffs[start:end] %}
+                        <div class="column">
+                            <div class="ui special card">
+                                <div class="blurring dimmable image">
+                                    <div class="ui dimmer">
+                                        <div class="content">
+                                            <div class="center">
+                                                <div class="ui inverted button">查看博客</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <img src="{{staff.get('image')}}">
+                                </div>
+                                <div class="content">
+                                    <a class="header">{{staff.get('name')}}</a>
+                                    <div class="meta">
+                                        <span class="date">{{staff.get('desc')}}</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    {% end %}
+                </div>
+            {% end %}                
+            </div>
+        </div>
+    </div>
+
+    <div class="ui container fixed">
+        <h3 class="ui horizontal divider header fixed">
+            分站链接
+        </h3>
+        <div class="ui center aligned grid">
+            {% for index in range(0,len(outsites),5) %}
+                {%set start = index %}
+                {% if index + 5 <= len(outsites) %}
+                    {%set end = index + 5 %}
+                {% else %}
+                    {%set end = len(outsites) %}
+                {% end %}
+                <div class="five column row">
+                    {% for outsite in outsites[start:end] %}
+                        <div class="column">
+                            <h2 class="ui header">
+                                <i class="huge icons">
+                                    <i class="{{outsite.get('icon')}}"></i>
+                                </i>
+                                <h3><a class="ui" href="{{outsite.get('href')}}">{{outsite.get('name')}}</a></h3>
+                            </h2>
+                        </div>
+                    {% end %}
+                </div>
+            {% end %}
+            </div>
+        </div>
+    </div>
+
+    <!-- 暂时用不到，所以注释掉-->
+    <!-- <div class="ui container fixed">
+        <h3 class="ui horizontal divider header fixed">
+            友情链接
+        </h3>
+        <div class="ui small images sponsors">
+        </div>
+    </div> -->
+
+{% end %}
+{% block footer %}
+    <div class="ui inverted vertical center aligned footer segment">
+        <div class="ui container">
+            <div class="ui stackable inverted grid">
+                <div class="row">
+                    <div class="four wide column">
+                    </div>
+                    <div class="eight wide column">
+                        <h4 class="ui inverted header">Copyright © 2017, SevenStar</h4>
+                        <p>
+                          Email : <a class="maillink" href="mailto:admin@sevenstar.club?subject=ask-aboutSevenStart">admin@sevenstar.club</a>
+                          | QQ Group： <a class="maillink" href="https://jq.qq.com/?_wv=1027&k=4694woq">167854148 点击群号即可加入群 </a>
+                        </p>
+                        <p>
+                          地址：北京市朝阳区北四环中路35号，邮编：100101
+                        </p>
+                    </div>
+                    <div class="two wide column">
+                        <div class="ui tiny image">
+                            <img src="/static/resources/img/wechat.jpg">
+                            <p>WeChat</p>
+                        </div>
+                    </div>
+                    <div class="two wide column">
+                        <div class="ui tiny image">
+                            <img src="/static/resources/img/qqgroup.png">
+                            <p>QQ群</p>
+                        </div>
+                    </div>
+          </div>
+    </div>
+{% end %}

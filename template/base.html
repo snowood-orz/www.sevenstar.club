@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<!--[if IE 8]> <html lang="en" class="ie8 no-js"> <![endif]-->
+<!--[if IE 9]> <html lang="en" class="ie9 no-js"> <![endif]-->
+<!--[if !IE]><!--> <html lang="en" class="no-js"> <!--<![endif]-->
+<html>
+
+<!-- BEGIN HEAD -->
+<head>
+    <title>七星网络安全社团</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <link href="{{ static_url('resources/css/jquery-ui-themes.css')}}" type="text/css" rel="stylesheet"/>
+    <link href="{{ static_url('resources/css/styles.css')}}" type="text/css" rel="stylesheet"/>
+    <link href="{{ static_url('resources/css/semantic.css')}}" rel="stylesheet" type="text/css"/>
+    <link href="{{ static_url('resources/css/tooltipster.bundle.min.css')}}" rel="stylesheet" type="text/css"/>
+    <link href="{{ static_url('resources/css/themes/tooltipster-sideTip-shadow.min.css')}}" rel="stylesheet" type="text/css"/>
+    <script src="{{ static_url('resources/scripts/jquery-3.1.1.min.js')}}"></script>
+    <script src="{{ static_url('resources/scripts/jquery-ui-1.8.16.custom.min.js')}}"></script>
+    <script src="{{ static_url('resources/scripts/semantic.min.js')}}"></script>
+    <script src="{{ static_url('resources/scripts/tooltipster.bundle.min.js')}}"></script>
+
+    <!-- <link rel="shortcut icon" href="{{ static_url('favicon.ico') }}"> -->
+</head>
+<!-- END HEAD -->
+
+
+<body>
+    <div class="pusher header">
+        <!-- BEGIN HEADER -->
+        {% block header %}{% end %}
+        <!-- END HEADER -->
+        <!-- BEGIN CONTAINER -->
+        {% block container %}{% end %}
+        <!-- END CONTAINER -->
+        <!-- BEGIN FOOTER -->
+        {% block footer %}{% end %}
+        <!-- END FOOTER -->
+    </div>
+    <!-- Scripts -->
+    <script src="{{ static_url('resources/scripts/sevenstar.js') }}"></script>
+
+
+</body>
+</html>

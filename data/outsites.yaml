@@ -1,0 +1,21 @@
+outsites:
+  - 
+    icon: configure icon
+    href: "#"
+    name: 工具
+  -
+    icon: talk outline icon
+    href: "#"
+    name: 论坛
+  -
+    icon: trophy icon
+    href: "#"
+    name: CTF平台
+  -
+    icon: write icon
+    href: "#"
+    name: 知识库
+  -
+    icon: wordpress icon
+    href: "#"
+    name: 博客
