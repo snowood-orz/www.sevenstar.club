@@ -9,11 +9,11 @@ outsites:
     name: 论坛
   -
     icon: trophy icon
-    href: "#"
+    href: "http://ctf.sevenstar.club"
     name: CTF平台
   -
     icon: write icon
-    href: "#"
+    href: "http://wooyun.sevenstar.club"
     name: 知识库
   -
     icon: wordpress icon
