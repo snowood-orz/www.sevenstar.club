@@ -8,7 +8,7 @@
 .masthead.segment {
     min-height: 500px;
     padding: 1em 0;
-    background-image: url(/static/resources/img/bg6.jpg)!important;
+    background-image: url(static/resources/img/bg6.jpg)!important;
     background-size: cover!important;
     background-position: center!important;
     color: #fff!important;
@@ -18,7 +18,7 @@
 .history {
     min-height: 800px;
     padding: 1em 0;
-    background-image: url(/static/resources/img/bg7.jpg)!important;
+    background-image: url(static/resources/img/bg7.jpg)!important;
     background-size: cover!important;
     background-position: center!important;
     color: #fff!important;
