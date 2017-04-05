@@ -2,14 +2,14 @@
 {% block header %}
     <div class="ui container">
         <div class="ui massive secondary pointing menu">
-            <a class="item" href="./index.html"><img src="static/resources/img/ssw.bmp">七星网络安全社团</a>
+            <a class="item" href="#"><img src="static/resources/img/ssw.jpg">七星网络安全社团</a>
             <div class="right menu" style="margin-bottom: 14px;">
-                <a class="ui item" href="./index.html">首页</a>
-                <a class="ui item" href="./index.html">工具</a>
-                <a class="ui item" href="./index.html">CTF平台</a>
-                <a class="ui item" href="./index.html">知识库</a>
-                <a class="ui item" href="./index.html">博客</a>
-                <a class="ui item" href="./index.html">论坛</a>
+                <a class="ui item" href="#">首页</a>
+                <a class="ui item" href="#">工具</a>
+                <a class="ui item" href="http://ctf.sevenstar.club">CTF平台</a>
+                <a class="ui item" href="http://wooyun.sevenstar.club">知识库</a>
+                <a class="ui item" href="#">博客</a>
+                <a class="ui item" href="http://community.sevenstar.club">论坛</a>
                 <!-- 关于我们的内容暂时没意义，不放-->
                 <!-- <a class="ui item" href="./index.html">关于我们</a> -->
             </div>
@@ -153,10 +153,12 @@
                     {% for outsite in outsites[start:end] %}
                         <div class="column">
                             <h2 class="ui header">
+								<a href="{{outsite.get('href')}}">
                                 <i class="huge icons">
                                     <i class="{{outsite.get('icon')}}"></i>
                                 </i>
                                 <h3><a class="ui" href="{{outsite.get('href')}}">{{outsite.get('name')}}</a></h3>
+								</a>
                             </h2>
                         </div>
                     {% end %}
@@ -186,7 +188,7 @@
                     <div class="eight wide column">
                         <h4 class="ui inverted header">Copyright © 2017, SevenStar</h4>
                         <p>
-                          Email : <a class="maillink" href="mailto:admin@sevenstar.club?subject=ask-aboutSevenStart">admin@sevenstar.club</a>
+                          Email : <a class="maillink" href="mailto:mail@sevenstar.club?subject=ask-aboutSevenStart">mail@sevenstar.club</a>
                           | QQ Group： <a class="maillink" href="https://jq.qq.com/?_wv=1027&k=4694woq">167854148 点击群号即可加入群 </a>
                         </p>
                         <p>

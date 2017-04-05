@@ -26,7 +26,7 @@ if __name__ == "__main__":
     from tornado.options import define,options
     app = SevenStarTornado()
     options.parse_command_line()
-    http_server = tornado.httpserver.HTTPServer(app)
+    http_server = tornado.httpserver.HTTPServer(app, xheaders=True)
     #http_server = tornado.httpserver.HTTPServer(app, ssl_options={
     #       "certfile": os.path.join(os.path.abspath("."), "server.crt"),
     #       "keyfile": os.path.join(os.path.abspath("."), "server.key"),
