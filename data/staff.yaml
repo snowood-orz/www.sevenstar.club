@@ -1,24 +1,24 @@
 staffs:
   - 
+    name: 李林
+    image: static/resources/img/elliot.jpg
+    desc: python
+    blog: http://snowwood.github.io/
+  - 
     name: 罗江
     image: static/resources/img/elyse.png
-    desc: python, WEB，渗透
-    blog: http://www.blogsir.com.cn/
-  - 
-    name: 陈伟晴
-    image: static/resources/img/elyse.png
-    desc: python, WEB, 测试，渗透，开发
+    desc: Python，CTFer，Web漏洞研究
     blog: http://www.blogsir.com.cn/
   -
-    name: 陈伟晴
-    image: static/resources/img/elyse.png
-    desc: python, WEB, 测试，渗透，开发
-    blog: http://www.blogsir.com.cn/
+    name: 马骁骁
+    image: static/resources/img/jenny.jpg
+    desc: 渗透，开发
+    blog: http://www.creatapd.com
   - 
-    name: 陈伟晴
-    image: static/resources/img/elyse.png
-    desc: python, WEB, 测试，渗透，开发
-    blog: http://www.blogsir.com.cn/
+    name: 张天鹏
+    image: static/resources/img/mark.png
+    desc: python，开发
+    blog: http://zhangtianpeng.me/
   -
     name: 陈伟晴
     image: static/resources/img/elyse.png
